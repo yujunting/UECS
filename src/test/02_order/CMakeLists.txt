@@ -3,6 +3,7 @@ Ubpa_AddTarget(
   RET_TARGET_NAME tname
   MODE EXE
   LIB
-    Ubpa::UECS_core
+  Ubpa::UECS_core
+  -pthread 
 )
 target_precompile_headers(${tname} REUSE_FROM UECS_core)
